@@ -58,7 +58,7 @@ def obter_dados_yfinance(periodo="2y", intervalo="1d", exportar_csv=True):
             print(f"   Último preço: {dados[nome].iloc[-1]:.4f}\n")
 
             if exportar_csv:
-                dados.to_csv(f"{ticker.replace('=','')}_{intervalo}.csv")
+                dados.to_csv(f"output/{ticker.replace('=','')}_{intervalo}.csv")
 
         except Exception as e:
             print(f"   ❌ Erro ao obter dados: {e}\n")
