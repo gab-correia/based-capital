@@ -67,10 +67,6 @@ def obter_dados_yfinance(periodo="2y", intervalo="1d", exportar_csv=True):
 
     return resultados
 
-
-# ===============================
-# USO DO SCRIPT
-# ===============================
 if __name__ == "__main__":
     # Exemplo de uso
     dados_obtidos = obter_dados_yfinance(periodo="2y", intervalo="1d", exportar_csv=True)
